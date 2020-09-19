@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { addTask, addCurrentTask } from '../../action/taskAction';
 import { Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
 
-const SearchBar = ({ addTask, addCurrentTask }) => {
+export const SearchBar = ({ addTask, addCurrentTask }) => {
   const [task, setTask] = useState();
 
   const updateFrom = (e) => {

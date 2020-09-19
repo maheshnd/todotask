@@ -22,14 +22,16 @@ const TaskList = ({ task: { taskName, isComplete, id } }) => {
         >
           {isComplete ? 'Completed' : 'Complete'}
         </Button>
-        <Badge
-          pill
-          variant='dark'
-          className='deleteButton'
-          onClick={taskRemove}
-        >
-          -
-        </Badge>
+        {isComplete && (
+          <Badge
+            pill
+            variant='dark'
+            className='deleteButton'
+            onClick={taskRemove}
+          >
+            -
+          </Badge>
+        )}
       </ListGroup.Item>
     </>
   );

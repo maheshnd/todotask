@@ -28,14 +28,14 @@ export default (state = initialState, action) => {
         currentTask: action.payload,
       };
     case MARKCOMPLETED_TASK:
+      console.log('testing123...', state);
       const updateTask = [...state.allTasks].filter((task) => {
         if (task.id === action.payload) {
           task.isComplete = true;
         }
         return task;
       });
-
-      console.log('updateTask', updateTask);
+      console.log('testing...', updateTask);
       return {
         ...state,
         allTasks: [...updateTask],

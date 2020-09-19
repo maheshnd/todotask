@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Row, ListGroup, Col } from 'react-bootstrap';
 import TaskList from './TaskList';
 import { allTaskSelector } from '../../selector';
-const List = ({ tasks, currentTask }) => {
+export const List = ({ tasks, currentTask }) => {
   return (
     <>
       <Row>
