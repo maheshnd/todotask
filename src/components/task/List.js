@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { Row, ListGroup, Col } from 'react-bootstrap';
 import TaskList from './TaskList';
-import { allTaskSelector } from '../../selector';
 export const List = ({ tasks, currentTask }) => {
   return (
     <>

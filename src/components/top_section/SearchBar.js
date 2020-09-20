@@ -7,7 +7,7 @@ export const SearchBar = ({ addTask, addCurrentTask }) => {
   const [task, setTask] = useState();
 
   const updateFrom = (e) => {
-    setTask(e.target.value);
+    e.target.value.length <= 50 && setTask(e.target.value);
     addCurrentTask(e.target.value);
   };
   const addNewTask = (e) => {
